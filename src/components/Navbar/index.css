@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*Nav estilos*/
+
+
+.nav__menu--dark {
+    filter: invert(100%);
+}
+
+.nav__menu--light {
+    filter: invert(0%);
+}
+
+.nav__link-show {
+    opacity: 1;
+}
+
+.nav__menu-item {
+    color: #ebe2e2;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: medium;
+}
+
+
+/*Style for ChatGPT*/
+.glitch-text {
+    position: relative;
+    display: inline-block;
+    text-shadow:
+        1px 1px 0px magenta,
+        /* sombra azul cyan */
+        -1px -1px 0px cyan;
+    /* sombra magenta */
+}

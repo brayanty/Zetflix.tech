@@ -1,0 +1,206 @@
+/*Google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+
+
+/*reiniciando estilos de los elementos a y li*/
+
+ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+/*Custom Property*/
+:root {
+    --padding-container: 10px 0;
+    --color-title: #001A49;
+    --min-heigth: 60px;
+}
+
+body {
+    background:url('https://www.toptal.com/designers/subtlepatterns/uploads/denim.png')
+}
+
+.container {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: var(--padding-container);
+
+}
+
+
+
+/*estilos para hero*/
+
+.hero{
+    margin: 0;
+}
+
+.hero__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100%), url('../imagen/imagen2.jpg');
+    background-size: cover;
+    background-position: top center;
+    height: 90vh;
+    max-height: 800px;
+    margin: 0;
+}
+
+.hero__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.hero__title {
+    color: #fff;
+    opacity: 1;
+    fill: brightness(100%);
+}
+
+.hero__paragrah {
+    color: #fff;
+}
+
+
+
+.cartas__container {
+    display: grid;
+    grid-template-columns: 100%;
+    gap: 1em;
+
+}
+
+.carta {
+    position: relative;
+    border-radius: 15px;
+    color: #fff;
+    overflow: hidden;
+    background-size: cover;
+    padding: 300px 0;
+    background-position: top center;
+}
+
+.carta-element {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    transition: opacity 4s;
+    background-color: rgba(53, 42, 42, 0.5);
+    width: 100%;
+}
+
+.carta-show {
+    opacity: 1;
+}
+
+
+.carta {
+    background-size: cover;
+    background-position: top center;
+}
+
+.btn__BackNext{
+    padding: 20px;
+    display: flex;
+    gap: 2em;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.carta__cta {
+    position: relative;
+}
+
+.carta__cta:hover {
+    background-color: #bc2406;
+
+}
+
+.carta__title {
+    font-weight: 500;
+}
+
+.main-container{
+    padding-bottom: 40px;
+}
+
+
+
+.nav__footer {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.nav__link-footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 3em;
+}
+
+
+.copy {
+    font-weight: 300;
+    margin: 0 auto;
+    color: #fff;
+}
+
+/* Si hay más de 6 cartas, ajustar el grid para mostrarlas bien */
+@media (min-width: 768px) {
+    .cartas__container {
+      grid-template-columns: repeat(3, 1fr); /* Cambiar a 4 columnas en pantallas más grandes */
+    }
+  }
+
+  
+
+@media (min-width: 980px)  {
+    .nav{
+        flex-wrap: nowrap;
+        --padding-container: 0;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        
+    }
+    .nav__link-menu{
+        height: 100%;
+        justify-self: right;
+        flex-direction: column;
+        width: max-content;
+        gap: 1em;
+    }
+    .nav__link-menu {
+        position: relative;
+        opacity: 1;
+        background-color: unset;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .nav__menu{
+        display: none
+    }
+
+    .back , .next{
+        grid-column: span 3;
+        
+    }
+}

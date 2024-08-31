@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Regular";
+  src: local("Poppins-Regular"), url(".\fonts\Poppins\Poppins-Regular.ttf");
+}
+@font-face {
+  font-family: "Medium";
+  src: local("Poppins-Medium"), url(".\fonts\Poppins\Poppins-Medium.ttf");
+}
+@font-face {
+  font-family: "bold";
+  src: local("Poppins-Bold"), url(".\fonts\Poppins\Poppins-Bold.ttf");
+}
+
+/* Variables */
+:root {
+  --color3: #e9eced;
+  --color4: #b1e1e9;
+  --color5: #ffffff;
+  --margin: 15px;
+  --height-nav: 60px;
+  --background: rgba(red, blue, black);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --background: url("https://www.toptal.com/designers/subtlepatterns/uploads/beige-tiles.png");
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: url("https://www.toptal.com/designers/subtlepatterns/uploads/denim.png");
+  }
+}
+
+body {
+  background: var(--background);
+}
+
+/* Botones Globales */
+.btn-go {
+  height: min-content;
+  padding: 5px 5px;
+  background-color: #4e8750;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-go:hover {
+  background-color: #2cbf19;
+}
+
+.btn-go:active {
+  background-color: #425142;
+}
+
+.black-blur {
+  background: rgba(19, 19, 19, 0.3);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+}
