@@ -38,7 +38,7 @@ function Proyects() {
           <figure className="h-56 transition duration-500 ease-in-out overflow-clip rounded-xl sm:rounded-xl lg:border lg:border-fuchsia-500 lg:hover:border-gray-700 lg:hover:bg-gray-800/50">
             <img
               className="h-full w-full ease-in-out duration-500 transition-transform hover:scale-105 "
-              src="src/assets/portfolio/galeria.png"
+              src="src/assets/portfolio/galeria.webp"
               alt="Galeria de imagenes, en cual tenia como finalidad en aprendizaje de CSS GRID"
             />
           </figure>
@@ -98,7 +98,7 @@ function Proyects() {
           <figure className="h-56 transition duration-500 ease-in-out overflow-clip rounded-xl sm:rounded-xl lg:border lg:border-fuchsia-500 lg:hover:border-gray-700 lg:hover:bg-gray-800/50">
             <img
               className="h-full w-full ease-in-out duration-500 transition-transform hover:scale-105 "
-              src="src\assets\portfolio\AdministraYA.png"
+              src="src\assets\portfolio\AdministraYA.webp"
               alt="Galeria de imagenes, en cual tenia como finalidad en aprendizaje de CSS GRID"
             />
           </figure>
