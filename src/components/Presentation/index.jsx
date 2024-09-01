@@ -1,4 +1,5 @@
 import "./index.css";
+import MeIMG from "../../assets/logo.png";
 
 function Presentation() {
   return (
@@ -7,7 +8,7 @@ function Presentation() {
         <div className="flex gap-4 mb-4">
           <img
             className="rounded-full shadow-lg size-16"
-            src="src\assets\logo.png"
+            src={MeIMG}
             alt="Logo de Zetflix"
           />
           <a
