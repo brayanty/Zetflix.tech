@@ -1,6 +1,7 @@
 import { faUser } from "@fortawesome/free-regular-svg-icons/faUser";
-import "./index.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import "./index.css";
+import AboutMeImg from "../../assets/Main/Brand.jpg";
 
 function AboutMe() {
   return (
@@ -27,7 +28,7 @@ function AboutMe() {
         width={200}
         height={200}
         className="w-72 md:w-64 h-full md:rotate-2"
-        src="src\assets\Main\website-development.jpg"
+        src={AboutMeImg}
         alt="imagene de Brayan Palacios"
       />
     </section>
