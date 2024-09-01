@@ -31,7 +31,7 @@ function Navbar({ isSelectModeDark, onDarkMode }) {
     }
   }, []);
 
-  const handlerClickMenu = (setMenuON) => {
+  const handlerClickMenu = () => {
     setMenuON((prevState) => !prevState);
   };
 
