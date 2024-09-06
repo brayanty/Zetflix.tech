@@ -1,1 +1,1 @@
-export const techs = ["HTML", "CSS", "Javascript", "React", "TailwindCSS"];
+export const techs = ['HTML', 'CSS', 'Javascript', 'React', 'TailwindCSS']
