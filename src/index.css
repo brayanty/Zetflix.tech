@@ -18,6 +18,10 @@
   font-family: "PixelifySans-bold";
   src: local("PixelifySans-Bold"), url("./fonts/Pixelify_Sans/PixelifySans-SemiBold.ttf");
 }
+@font-face {
+  font-family: "Filano";
+  src: local("filano"), url("./fonts/Filano/filano.ttf");
+}
 
 PixelifySans-bold
 

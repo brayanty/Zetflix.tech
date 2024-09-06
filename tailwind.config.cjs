@@ -16,7 +16,8 @@ module.exports = {
         primaryRegular: ['Regular', 'sans-serif'],
         primaryMedium: ['Medium', 'sans-serif'],
         primarybold: ['Bold', 'sans-serif'],
-        titleSemiBold: ['PixelifySans-Semibold']
+        titleSemiBold: ['PixelifySans-Semibold'],
+        Filano: ['filano']
       }
     }
   },

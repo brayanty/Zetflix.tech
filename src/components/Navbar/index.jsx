@@ -1,14 +1,13 @@
 import './index.css'
-import menu from '../../assets/menu.png'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faUsers, faBook } from '@fortawesome/free-solid-svg-icons'
-
-import { useState, useEffect } from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMoon, faSun } from '@fortawesome/free-regular-svg-icons'
+import menu from '../../assets/menu.png'
+import PropTypes from 'prop-types';
+import { useState } from 'react'
 
 // Nose como verificar el scroll de otra manera asi que por eso esta asi
 function useScrollView(setStickyScroll, setMenuON) {
-  useEffect(() => {
     window.onscroll = function () {
       scrollVerify()
     }
@@ -26,8 +25,12 @@ function useScrollView(setStickyScroll, setMenuON) {
         return
       }
     }
-  }, [])
 }
+
+Navbar.propTypes = {
+  isSelectModeDark: PropTypes.bool.isRequired,
+  themeSelect: PropTypes.func
+};
 
 function Navbar({ isSelectModeDark, themeSelect }) {
   // Menu visible o no
@@ -127,5 +130,6 @@ function Navbar({ isSelectModeDark, themeSelect }) {
     </nav>
   )
 }
+
 
 export default Navbar

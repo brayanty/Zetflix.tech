@@ -1,6 +1,12 @@
 import './index.css'
+import PropTypes from 'prop-types';
 
-function Testimony ({ users, ratings }) {
+
+Testimony.propTypes = {
+  users: PropTypes.object.isRequired
+}
+function Testimony (props) {
+  const [users] = props
   if (!users) return
 
   return (
