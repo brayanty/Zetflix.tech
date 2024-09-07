@@ -23,6 +23,7 @@ function Contacts() {
               href='https://x.com/ElBrayanP21'
               target='_blank'
               rel='noopener noreferrer'
+              aria-label='Ir a X'
             >
               <FontAwesomeIcon
                 icon={faXTwitter}
@@ -36,6 +37,7 @@ function Contacts() {
               href='https://www.linkedin.com/in/el-brayan-p-4b9210261/'
               target='_blank'
               rel='noopener noreferrer'
+              aria-label='Ir a Linkedin'
             >
               <FontAwesomeIcon
                 icon={faLinkedin}
@@ -49,6 +51,8 @@ function Contacts() {
               href='https://www.instagram.com/brayan_techs/'
               target='_blank'
               rel='noopener noreferrer'
+              aria-label='Ir a Instagram'
+
             >
               <FontAwesomeIcon
                 icon={faInstagram}

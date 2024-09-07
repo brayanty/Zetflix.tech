@@ -28,7 +28,7 @@ function useScrollView(setStickyScroll, setMenuON) {
 }
 
 Navbar.propTypes = {
-  isSelectModeDark: PropTypes.bool.isRequired,
+  isSelectModeDark: PropTypes.string.isRequired,
   themeSelect: PropTypes.func
 };
 
