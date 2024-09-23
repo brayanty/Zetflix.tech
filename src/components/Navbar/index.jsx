@@ -1,48 +1,48 @@
-import './index.css'
-import { faUsers, faBook } from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faMoon, faSun } from '@fortawesome/free-regular-svg-icons'
-import menu from '../../assets/menu.png'
-import PropTypes from 'prop-types';
-import { useState } from 'react'
+import "./index.css";
+import { faUsers, faBook } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faMoon, faSun } from "@fortawesome/free-regular-svg-icons";
+import menu from "../../assets/menu.png";
+import PropTypes from "prop-types";
+import { useState } from "react";
 
 // Nose como verificar el scroll de otra manera asi que por eso esta asi
 function useScrollView(setStickyScroll, setMenuON) {
-    window.onscroll = function () {
-      scrollVerify()
+  window.onscroll = function () {
+    scrollVerify();
+  };
+  function scrollVerify() {
+    if (window.scrollY >= 400) {
+      setMenuON(false);
     }
-    function scrollVerify() {
-      if (window.scrollY >= 400) {
-        setMenuON(false)
-      }
 
-      if (window.scrollY >= 200) {
-        setStickyScroll('black-blur')
-        return
-      }
-      if (window.scrollY === 0) {
-        setStickyScroll('')
-        return
-      }
+    if (window.scrollY >= 200) {
+      setStickyScroll("black-blur");
+      return;
     }
+    if (window.scrollY === 0) {
+      setStickyScroll("");
+      return;
+    }
+  }
 }
 
 Navbar.propTypes = {
   isSelectModeDark: PropTypes.string.isRequired,
-  themeSelect: PropTypes.func
+  themeSelect: PropTypes.func,
 };
 
 function Navbar({ isSelectModeDark, themeSelect }) {
   // Menu visible o no
-  const [menuON, setMenuON] = useState(false)
+  const [menuON, setMenuON] = useState(false);
   // Mostrar el black-blur
-  const [isStickyScroll, setStickyScroll] = useState('')
+  const [isStickyScroll, setStickyScroll] = useState("");
 
-  useScrollView(setStickyScroll, setMenuON)
+  useScrollView(setStickyScroll, setMenuON);
 
   const handlerClickMenu = () => {
-    setMenuON((prevState) => !prevState)
-  }
+    setMenuON((prevState) => !prevState);
+  };
 
   return (
     <nav
@@ -52,7 +52,13 @@ function Navbar({ isSelectModeDark, themeSelect }) {
     >
       <div className="container mx-auto md:w-[70%] flex justify-between items-center ">
         <div className="flex items-center">
-          <h5 className="glitch-text font-titleSemiBold text-4xl uppercase">
+          <h5
+            className={`${
+              isStickyScroll === "black-blur"
+                ? "text-white  border-white"
+                : "text-black border-slate-950"
+            } font-primarybold max-md:text-gray-50 dark:text-gray-50 shadow-black dark:shadow-slate-300 text-shadow-md text-4xl uppercase`}
+          >
             Zetflix
           </h5>
         </div>
@@ -66,7 +72,7 @@ function Navbar({ isSelectModeDark, themeSelect }) {
           <div className="md:hidden">
             <h4 className="text-gray-50 text-3xl">Menu</h4>
           </div>
-          <ul className="font-primaryMedium max-md:self-start max-md:m-3 flex gap-4 flex-col md:flex-row">
+          <ul className="font-primaryMedium max-md:self-start max-md:m-3 flex items-center gap-4 flex-col md:flex-row">
             <li>
               <a
                 className={`${
@@ -91,33 +97,35 @@ function Navbar({ isSelectModeDark, themeSelect }) {
                 <FontAwesomeIcon icon={faUsers} size="sm" /> Contactos
               </a>
             </li>
-            <li>
+            <li className="self-start">
               <button
                 aria-label="true"
-                className="w-10 p-1 items-center transition-all ease-in-out hover:shadow-sm dark:hover:shadow-white hover:shadow-slate-700 dark:hover:border-gray-200"
+                className="w-20 p-1 text-center transition-all ease-in-out hover:shadow-sm dark:hover:border-gray-200"
                 type="button"
                 onClick={() => themeSelect()}
               >
                 {isSelectModeDark === "light" ? (
-                  <FontAwesomeIcon
-                    icon={faSun}
-                    size="xl"
+                  <span
                     className={`${
                       isStickyScroll === "black-blur"
                         ? "text-white"
                         : "text-black"
-                    }  transition-all max-md:text-gray-50 dark:text-gray-50`}
-                  />
+                    } flex gap-1 transition-all font-bold max-md:text-gray-50 dark:text-gray-50 `}
+                  >
+                    <FontAwesomeIcon icon={faSun} size="xl" />
+                    Dark
+                  </span>
                 ) : (
-                  <FontAwesomeIcon
-                    icon={faMoon}
-                    size="xl"
+                  <span
                     className={`${
                       isStickyScroll === "black-blur"
                         ? "text-white"
                         : "text-black"
-                    } transition-all max-md:text-gray-50 dark:text-gray-50`}
-                  />
+                    } flex gap-1 transition-all font-bold max-md:text-gray-50 dark:text-gray-50`}
+                  >
+                    <FontAwesomeIcon icon={faMoon} size="xl" />
+                    Light
+                  </span>
                 )}
               </button>
             </li>
@@ -141,5 +149,4 @@ function Navbar({ isSelectModeDark, themeSelect }) {
   );
 }
 
-
-export default Navbar
+export default Navbar;
