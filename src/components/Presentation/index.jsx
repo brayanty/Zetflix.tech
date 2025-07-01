@@ -31,12 +31,11 @@ function Presentation() {
           Hola, soy Brayan Palacios
         </h1>
         <p className="mt-6 text-xl text-gray-800 shadow-slate-500 text-shadow-sm dark:text-gray-300">
-          +2 años aprendiendo.{" "}
+          +4 años aprendiendo de manera perezosa.{" "}
           <strong className="text-yellow-600 dark:text-yellow-400">
-            Desarrollo de Software de manera autonoma
+            trabajo como tecnico de celulares, y en las noches estudio programación
           </strong>{" "}
-          de Aragua, Venezuela. Empeze con C++, y ahora estoy enfocado en,
-          Desarrollo Web Front-end.
+          ni al caso pero soy de pobrezuela y actualmente vivo en Colombia. y por ultimo estoy tratando que convertime el el proximo Mark yonoseque .
         </p>{" "}
         <nav className="flex flex-wrap gap-4 mt-8">
           {" "}

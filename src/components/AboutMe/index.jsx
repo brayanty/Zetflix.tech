@@ -12,15 +12,13 @@ function AboutMe() {
         </h2>
         <div className="text-xl text-gray-950 dark:text-gray-200">
           <p>
-            Soy un apasionado por la tecnología, desde muy pequeño me ha llamado
-            la ateción las computadoras, y el como funcionamiento de los
-            programas en las mismas.
+            Desde pequeño me a gustado la tecnología, sobre todo el funcionamiento de la misma.
           </p>
           <br />
           <p>
-            Actualmente no tengo experiencia en la industria laboral pero estoy
+            Actualmente no tengo experiencia en la industria del Desarrollo Web pero estoy
             profundamente conprometido al dar el 101% en cada cosa que haga, y
-            asi conseguir un perfil mas profesional en esta industria.
+            asi conseguir un perfil mas profesional.
           </p>
         </div>
       </header>

@@ -59,7 +59,7 @@ function Navbar({ isSelectModeDark, themeSelect }) {
                 : "text-black border-slate-950"
             } font-primarybold max-md:text-gray-50 dark:text-gray-50 shadow-black dark:shadow-slate-300 text-shadow-md text-4xl uppercase`}
           >
-            Zetflix
+            
           </h5>
         </div>
         <div
