@@ -43,37 +43,25 @@ function Proyects() {
           </figure>
           <header className="flex w-full gap-2 flex-col justify-around justify-self-end">
             <div className="flex flex-col gap-2">
-              <h4 className="text-3xl font-primarybold text-black dark:text-white ">
-                Galeria
+              <h4 className="text-2xl font-primarybold text-black dark:text-white ">
+                Inventary Manager for Technical Service
               </h4>
               <div>
                 <ul className="flex flex-row gap-3 text-black dark:text-white font-primaryMedium ">
                   <li className="p-1">
-                    <FontAwesomeIcon icon={faHtml5} size="lg" />
-                  </li>
-                  <li className="p-1">
-                    <FontAwesomeIcon icon={faCss3} size="lg" />
-                  </li>
-                  <li className="p-1">
-                    <FontAwesomeIcon icon={faJs} size="lg" className="" />
+                    <FontAwesomeIcon icon={faReact} size="lg" />
                   </li>
                 </ul>
               </div>
               <p className="text-base text-wrap font-primaryMedium text-slate-950 dark:text-slate-200">
-                Galeria de imagenes, el cual tenia como finalidad en aprendizaje
-                de CSS GRID
+                Este es la aplicación que me va a sacar de pobre creo...
               </p>
             </div>
             <div className="flex gap-2">
               {renderButtons(
                 "Ver código",
-                "https://github.com/brayanty/Galeria",
+                "https://github.com/brayanty/inventory-manager",
                 faGithub
-              )}
-              {renderButtons(
-                "Ver página",
-                "https://brayanty.github.io/Galeria/",
-                faMagnifyingGlass
               )}
             </div>
           </header>
