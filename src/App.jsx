@@ -6,6 +6,7 @@ import Footer from './components/Footer'
 import Contacts from './components/Contacts'
 import Form from './components/Form'
 import AboutMe from './components/AboutMe'
+import Skills from './components/Skills'
 
 function useDarkLightMode (theme) {
   useEffect(() => {
@@ -17,11 +18,11 @@ function useDarkLightMode (theme) {
       theme === 'dark'
         ? document.documentElement.style.setProperty(
           '--background',
-          "url('https://www.toptal.com/designers/subtlepatterns/uploads/denim.png')"
+          "rgba(0, 0, 0, 0.9)"
         )
         : document.documentElement.style.setProperty(
           '--background',
-          "url('https://www.toptal.com/designers/subtlepatterns/uploads/beige-tiles.png')"
+          "rgba(110, 99, 99, 0.3)"
         )
     }
 
@@ -62,6 +63,7 @@ function App () {
       <Presentation />
       <Proyects />
       <AboutMe />
+      <Skills />
       <Contacts />
       <Form />
       <Footer />
