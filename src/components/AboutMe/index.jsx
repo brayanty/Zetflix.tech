@@ -5,7 +5,7 @@ import "./index.css";
 
 function AboutMe() {
   return (
-    <section className="mx-auto container flex flex-col-reverse items-center md:flex-row gap-3 mt-6 mb-6 max-md:p-4 py-10 w-full lg:max-w-4xl md:max-w-2xl">
+    <section className="about mx-auto container flex flex-col-reverse items-center md:flex-row gap-3 mt-6 mb-6 max-md:p-4 py-10 w-full lg:max-w-4xl md:max-w-2xl">
       <header className="flex flex-col md:items-start gap-1">
         <h2 className="text-4xl font-primarybold tracking-tight text-gray-800 dark:text-white">
           <FontAwesomeIcon icon={faUser} size="xs" /> Sobre mi

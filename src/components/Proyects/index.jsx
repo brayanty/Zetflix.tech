@@ -27,7 +27,7 @@ function Proyects() {
   };
 
   return (
-    <section className="container mx-auto p-4 items-center flex gap-8 flex-col flex-wrap ">
+    <section className="proyects container mx-auto p-4 items-center flex gap-8 flex-col flex-wrap ">
       <div id="Proyects" className="flex flex-col gap-6">
         <h4 className="text-4xl font-primarybold text-black dark:text-white  self-start ">
           <FontAwesomeIcon icon={faCode} size="xs" /> Proyectos

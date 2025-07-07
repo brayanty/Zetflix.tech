@@ -2,8 +2,9 @@ import "./index.css";
 import MeIMG from "../../assets/logo.png";
 
 function Presentation() {
+
   return (
-    <section className="mx-auto container py-20 md:py-24 scroll-m-20 w-full lg:max-w-4xl md:max-w-2xl">
+    <section className="presentation mx-auto container py-20 md:py-24 scroll-m-20 w-full lg:max-w-4xl md:max-w-2xl">
       <div className="max-w-xl m-4">
         <div className="flex gap-4 mb-4">
           <img

@@ -4,16 +4,16 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function Skills() {
   return (
-    <section className="mx-auto container flex flex-col-reverse items-center md:flex-row gap-3 mt-6 mb-6 max-md:p-4 py-10 w-full lg:max-w-4xl md:max-w-2xl">
+    <section className="skills mx-auto container flex flex-col-reverse items-center md:flex-row gap-3 mt-6 mb-6 max-md:p-4 py-10 w-full lg:max-w-4xl md:max-w-2xl">
       <div className="flex flex-col justify-center items-center gap-6 ">
         <header className="self-start">
-          <h4 className="text-4xl font-primarybold text-black dark:text-white  self-start ">
+          <h4 className="text-4xl font-primarybold text-black text-white  self-start ">
             <FontAwesomeIcon icon={faKitchenSet} size="xs" /> Skills
           </h4>
         </header>
         <div className="flex justify-center items-center gap-3 p-4">
           <a
-            className="p-1 rounded bg-gray dark:bg-white"
+            className="p-1 rounded bg-gray bg-white"
             href="https://getbootstrap.com"
             target="_blank"
             rel="noreferrer"
@@ -26,7 +26,7 @@ function Skills() {
             />
           </a>
           <a
-            className="p-1 rounded bg-gray dark:bg-blue-200"
+            className="p-1 rounded bg-gray bg-blue-200"
             href="https://www.w3schools.com/cpp/"
             target="_blank"
             rel="noreferrer"
@@ -39,7 +39,7 @@ function Skills() {
             />
           </a>
           <a
-            className="p-1 rounded bg-gray dark:bg-blue-200"
+            className="p-1 rounded bg-gray bg-blue-200"
             href="https://www.w3schools.com/css/"
             target="_blank"
             rel="noreferrer"
@@ -52,7 +52,7 @@ function Skills() {
             />
           </a>
           <a
-            className="p-1 rounded bg-gray dark:bg-white"
+            className="p-1 rounded bg-gray bg-white"
             href="https://expressjs.com"
             target="_blank"
             rel="noreferrer"
@@ -65,7 +65,7 @@ function Skills() {
             />
           </a>
           <a
-            className="p-1 rounded bg-gray dark:bg-orange-200"
+            className="p-1 rounded bg-gray bg-orange-200"
             href="https://git-scm.com/"
             target="_blank"
             rel="noreferrer"
@@ -78,7 +78,7 @@ function Skills() {
             />
           </a>
           <a
-            className="p-1 rounded bg-gray dark:bg-orange-200"
+            className="p-1 rounded bg-gray bg-orange-200"
             href="https://www.w3.org/html/"
             target="_blank"
             rel="noreferrer"
@@ -91,7 +91,7 @@ function Skills() {
             />
           </a>
           <a
-            className="p-1 rounded bg-gray dark:bg-gray-300"
+            className="p-1 rounded bg-gray bg-gray-300"
             href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
             target="_blank"
             rel="noreferrer"
@@ -104,7 +104,7 @@ function Skills() {
             />
           </a>
           <a
-            className="p-1 rounded bg-gray dark:bg-amber-200"
+            className="p-1 rounded bg-gray bg-amber-200"
             href="https://www.linux.org/"
             target="_blank"
             rel="noreferrer"
@@ -117,7 +117,7 @@ function Skills() {
             />
           </a>
           <a
-            className="p-1 rounded bg-gray dark:bg-green-200"
+            className="p-1 rounded bg-gray bg-green-200"
             href="https://nodejs.org"
             target="_blank"
             rel="noreferrer"
@@ -130,7 +130,7 @@ function Skills() {
             />
           </a>
           <a
-            className="p-1 rounded bg-gray dark:bg-black/30"
+            className="p-1 rounded bg-gray bg-black/30"
             href="https://reactjs.org/"
             target="_blank"
             rel="noreferrer"
@@ -143,7 +143,7 @@ function Skills() {
             />
           </a>
           <a
-            className="p-1 rounded bg-gray dark:bg-slate-800"
+            className="p-1 rounded bg-gray bg-slate-800"
             href="https://tailwindcss.com/"
             target="_blank"
             rel="noreferrer"
@@ -156,7 +156,7 @@ function Skills() {
             />
           </a>
           <a
-            className="p-1 rounded bg-gray dark:bg-white"
+            className="p-1 rounded bg-gray bg-white"
             href="https://www.typescriptlang.org/"
             target="_blank"
             rel="noreferrer"

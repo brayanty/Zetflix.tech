@@ -7,59 +7,29 @@ import Contacts from './components/Contacts'
 import Form from './components/Form'
 import AboutMe from './components/AboutMe'
 import Skills from './components/Skills'
+import { useDarkLightMode } from './components/hooks/useDarkMode'
+import ScrollReveal from 'scrollreveal'
 
-function useDarkLightMode (theme) {
-  useEffect(() => {
-    // Aplicar la clase correspondiente al documento
-    function applyBackground (theme) {
-      document.documentElement.classList.remove('light', 'dark')
-      document.documentElement.classList.add(theme)
-
-      theme === 'dark'
-        ? document.documentElement.style.setProperty(
-          '--background',
-          "rgba(0, 0, 0, 0.9)"
-        )
-        : document.documentElement.style.setProperty(
-          '--background',
-          "rgba(110, 99, 99, 0.3)"
-        )
-    }
-
-    if (theme === 'dark') {
-      applyBackground('dark')
-    } else {
-      applyBackground('light')
-    }
-
-    // Guardar el tema en localStorage
-    window.localStorage.setItem('theme', theme)
-  }, [theme])
-}
 
 function App () {
-  // Inicializar el tema desde localStorage
-  const [theme, setTheme] = useState(() => {
-    const savedTheme = window.localStorage.getItem('theme')
-    if (savedTheme) {
-      return savedTheme
-    }
-    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
-  })
+  const [theme , onDarkmode] = useDarkLightMode()
+  useEffect(()=>{
+     const sr = (window.sr = ScrollReveal());
+    sr.reveal(".presentation, .proyects, .about, .skills, .contacts,article,button");
 
-  useDarkLightMode(theme)
-
-  function handlerClickDark () {
-    if (theme === 'dark') {
-      setTheme('light')
-    } else {
-      setTheme('dark')
-    }
-  }
+    sr.reveal(".route", {
+      duration: 750,
+      distance: "40px",
+      easing: "cubic-bezier(0.4, 6, 0, 2)",
+      interval: 64,
+      origin: "bottom",
+      viewFactor: 0.32
+    });
+  },[])
 
   return (
     <>
-      <Navbar isSelectModeDark={theme} themeSelect={handlerClickDark} />
+      <Navbar isSelectModeDark={theme} themeSelect={onDarkmode} />
       <Presentation />
       <Proyects />
       <AboutMe />

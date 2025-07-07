@@ -4,7 +4,7 @@ function Form () {
   return (
     <section
       id='contacts'
-      className='container m-0-auto pt-6 pb-6 flex flex-col gap-3 items-center text-slate-950 dark:text-white bg-transparent transition-colors backdrop-blur-sm mb-5 rounded-lg border border-gray-400 shadow-slate-500 dark:shadow-gray-300 shadow-md w-full max-w-md'
+      className='contacts container m-0-auto pt-6 pb-6 flex flex-col gap-3 items-center text-slate-950 dark:text-white bg-transparent transition-colors backdrop-blur-sm mb-5 rounded-lg border border-gray-400 shadow-slate-500 dark:shadow-gray-300 shadow-md w-full max-w-md'
     >
       <h4 className='font-primarybold text-2xl'>Formulario de Contacto</h4>
       <form
