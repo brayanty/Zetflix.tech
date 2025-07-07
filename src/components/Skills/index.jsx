@@ -11,7 +11,7 @@ function Skills() {
             <FontAwesomeIcon icon={faKitchenSet} size="xs" /> Skills
           </h4>
         </header>
-        <div className="flex justify-center items-center gap-3 p-4">
+        <div className="flex justify-center items-center flex-wrap gap-3 p-4">
           <a
             className="p-1 rounded bg-gray bg-white"
             href="https://getbootstrap.com"
