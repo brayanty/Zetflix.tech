@@ -32,6 +32,7 @@ function Contacts() {
               />
             </a>
           </li>
+          /*
           <li>
             <a
               href='https://www.linkedin.com/in/el-brayan-p-4b9210261/'
@@ -46,6 +47,7 @@ function Contacts() {
               />
             </a>
           </li>
+          */
           <li>
             <a
               href='https://www.instagram.com/brayan_techs/'
