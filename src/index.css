@@ -16,13 +16,52 @@
 }
 @font-face {
   font-family: "PixelifySans-bold";
-  src: local("PixelifySans-Bold"), url("./fonts/Pixelify_Sans/PixelifySans-SemiBold.ttf");
+  src:
+    local("PixelifySans-Bold"),
+    url("./fonts/Pixelify_Sans/PixelifySans-SemiBold.ttf");
 }
 @font-face {
   font-family: "Filano";
   src: local("filano"), url("./fonts/Filano/filano.ttf");
 }
 
+/* Pattern */
+
+/* From Uiverse.io by sunn_2633 */
+.cyber-pattern {
+  width: 100%;
+  height: 100%;
+  background-color: #050505; /* Fond presque noir */
+  /* C'est ici que la magie opère. On empile plusieurs couches : */
+  background-image: 
+    /* 1. La Vignette (Ombre sur les bords pour l'effet cinéma) */
+    radial-gradient(circle at center, transparent 30%, #000 90%),
+    /* 2. GRILLE PRINCIPALE (Cyan - Grande) - Lignes Verticales & Horizontales */
+    linear-gradient(rgba(3, 233, 244, 0.1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(3, 233, 244, 0.1) 1px, transparent 1px),
+    /* 3. GRILLE SECONDAIRE (Magenta - Petite) - Lignes Verticales & Horizontales */
+    linear-gradient(rgba(217, 3, 244, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(217, 3, 244, 0.05) 1px, transparent 1px);
+
+  /* On définit la taille des grilles */
+  background-size:
+    100% 100%,
+    /* Vignette */ 60px 60px,
+    /* Grande grille Cyan (60px) */ 60px 60px,
+    20px 20px,
+    /* Petite grille Magenta (20px) */ 20px 20px;
+}
+
+/* From Uiverse.io by Juanes200122 */
+.liane-pattern {
+  width: 100%;
+  height: 100%;
+  /* Add your background pattern here */
+  background-color: #ffffff;
+  background-image: radial-gradient(rgba(12, 12, 12, 0.171) 2px, transparent 0);
+  background-size: 30px 30px;
+  background-position: -5px -5px;
+}
 
 /* Variables */
 :root {

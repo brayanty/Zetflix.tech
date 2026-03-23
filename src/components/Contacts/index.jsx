@@ -32,7 +32,6 @@ function Contacts() {
               />
             </a>
           </li>
-          /*
           <li>
             <a
               href='https://www.linkedin.com/in/el-brayan-p-4b9210261/'
@@ -47,10 +46,9 @@ function Contacts() {
               />
             </a>
           </li>
-          */
           <li>
             <a
-              href='https://www.instagram.com/brayan_techs/'
+              href='https://www.instagram.com/elbrayanp2003/'
               target='_blank'
               rel='noopener noreferrer'
               aria-label='Ir a Instagram'

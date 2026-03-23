@@ -2,7 +2,6 @@ import "./index.css";
 import MeIMG from "../../assets/logo.png";
 
 function Presentation() {
-
   return (
     <section className="presentation mx-auto container py-20 md:py-24 scroll-m-20 w-full lg:max-w-4xl md:max-w-2xl">
       <div className="max-w-xl m-4">
@@ -32,12 +31,16 @@ function Presentation() {
           Hola, soy Brayan Palacios
         </h1>
         <p className="mt-6 text-xl text-gray-800 shadow-slate-500 text-shadow-sm dark:text-gray-300">
-          +4 años aprendiendo de manera perezosa.{" "}
+          Más de 4 años aprendiendo de forma autodidacta sobre desarrollo de
+          software.{" "}
           <strong className="text-yellow-600 dark:text-yellow-400">
-            trabajo como tecnico de celulares, y en las noches estudio programación
+            Trabajo principalmente con tecnologías como React, Node.js y
+            JavaScript moderno, creando aplicaciones escalables y mantenibles.
           </strong>{" "}
-          ni al caso pero soy de pobrezuela y actualmente vivo en Colombia. y por ultimo estoy tratando que convertime el el proximo Mark yonoseque .
-        </p>{" "}
+          Me enfoco en mejorar constantemente mis buenas prácticas, la calidad
+          del código y la resolución eficiente de problemas.
+        </p>
+
         <nav className="flex flex-wrap gap-4 mt-8">
           {" "}
           <a

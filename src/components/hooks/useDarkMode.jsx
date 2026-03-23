@@ -1,4 +1,4 @@
-import { useState,useEffect  } from "react";
+import { useState, useEffect } from "react";
 
 export function useDarkLightMode() {
   const [theme, setTheme] = useState(() => {
@@ -11,24 +11,22 @@ export function useDarkLightMode() {
       : "light";
   });
 
-  const onDarkmode = () =>{
-    setTheme(pre => pre == "dark" ? "light" : "dark")
-  } 
+  const onDarkmode = () => {
+    setTheme((pre) => (pre == "dark" ? "light" : "dark"));
+  };
 
   useEffect(() => {
     function applyBackground(theme) {
       document.documentElement.classList.remove("light", "dark");
       document.documentElement.classList.add(theme);
 
+      theme === "light"
+        ? document.documentElement.classList.add("liane-pattern")
+        : document.documentElement.classList.remove("liane-pattern");
+
       theme === "dark"
-        ? document.documentElement.style.setProperty(
-            "--background",
-            "rgba(0, 0, 0, 0.9)"
-          )
-        : document.documentElement.style.setProperty(
-            "--background",
-            "rgba(110, 99, 99, 0.3)"
-          );
+        ? document.documentElement.classList.add("cyber-pattern")
+        : document.documentElement.classList.remove("cyber-pattern");
     }
 
     if (theme === "dark") {
@@ -39,5 +37,5 @@ export function useDarkLightMode() {
     window.localStorage.setItem("theme", theme);
   }, [theme]);
 
-  return [theme,onDarkmode]
+  return [theme, onDarkmode];
 }
