@@ -5,12 +5,13 @@ import {
   faJs,
   faGithub,
   faReact,
+  faNodeJs,
+  faGolang,
 } from "@fortawesome/free-brands-svg-icons";
 import { faMagnifyingGlass, faCode } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import TailwindCSSLogo from "../svgsComponets";
-import imagenGalery from "../../assets/portfolio/galeria.webp";
-import imagenDrMorse from "../../assets/portfolio/DrMorse.webp";
+import botTelegram from "../../assets/portfolio/bottelegram.png";
 
 function Proyects() {
   const renderButtons = (title, url, icon) => {
@@ -30,36 +31,37 @@ function Proyects() {
     <section className="proyects container mx-auto p-4 items-center flex gap-8 flex-col flex-wrap ">
       <div id="Proyects" className="flex flex-col gap-6">
         <h4 className="text-4xl font-primarybold text-black dark:text-white  self-start ">
-          <FontAwesomeIcon icon={faCode} size="xs" /> Proyectos
+          <FontAwesomeIcon icon={faCode} size="xs" /> Proyects
         </h4>
 
         <article className="grid grid-cols-2 max-md:grid-cols-1 gap-4 max-md:gap-5 rounded-md min-w-52 lg:max-w-4xl md:max-w-2xl transition-transform overflow-hidden ">
           <figure className="h-56 transition duration-500 ease-in-out overflow-clip rounded-xl sm:rounded-xl lg:border lg:border-fuchsia-500 lg:hover:border-gray-700 lg:hover:bg-gray-800/50">
             <img
               className="h-full w-full ease-in-out duration-500 transition-transform hover:scale-105 "
-              src={imagenGalery}
+              src={"https://raw.githubusercontent.com/brayanty/inventory-manager/main/public/images/InventoryManager.png"}
               alt="Galeria de imagenes, en cual tenia como finalidad en aprendizaje de CSS GRID"
             />
           </figure>
           <header className="flex w-full gap-2 flex-col justify-around justify-self-end">
             <div className="flex flex-col gap-2">
-              <h4 className="text-2xl font-primarybold text-black dark:text-white ">
+              <h4 className="text-xl font-primarybold text-black dark:text-white">
                 Inventary Manager for Technical Service
               </h4>
               <div>
                 <ul className="flex flex-row gap-3 text-black dark:text-white font-primaryMedium ">
-                  <li className="p-1">
+                  <li className="p-1 flex gap-1">
                     <FontAwesomeIcon icon={faReact} size="lg" />
+                    <FontAwesomeIcon icon={faNodeJs} size="lg" />
                   </li>
                 </ul>
               </div>
               <p className="text-base text-wrap font-primaryMedium text-slate-950 dark:text-slate-200">
-                Este es la aplicación que me va a sacar de pobre creo...
+              This project is a web application for managing inventory in a technical service context. It allows users to track and manage products, view product details, and perform CRUD operations.
               </p>
             </div>
             <div className="flex gap-2">
               {renderButtons(
-                "Ver código",
+                "View code",
                 "https://github.com/brayanty/inventory-manager",
                 faGithub
               )}
@@ -70,49 +72,35 @@ function Proyects() {
           <figure className="h-56 transition duration-500 ease-in-out overflow-clip rounded-xl sm:rounded-xl lg:border lg:border-fuchsia-500 lg:hover:border-gray-700 lg:hover:bg-gray-800/50">
             <img
               className="h-full w-full ease-in-out duration-500 transition-transform hover:scale-105 "
-              src={imagenDrMorse}
-              alt="Galeria de imagenes, en cual tenia como finalidad en aprendizaje de CSS GRID"
+              src={botTelegram}
+              alt="Gallery of images, which had the purpose of learning CSS GRID"
             />
           </figure>
           <header className="flex w-full gap-2 flex-col justify-around justify-self-end">
             <div className="flex flex-col gap-2">
-              <h4 className="text-3xl text-black dark:text-white font-primarybold">
-                Dr. Morse
+              <h4 className="text-xl text-black dark:text-white font-primarybold">
+                Telegram Summary GroupChatBot
               </h4>
               <div>
                 <ul className="flex flex-row gap-3 text-black dark:text-white font-primaryMedium">
                   <li className="px-1">
                     <FontAwesomeIcon
-                      icon={faReact}
+                      icon={faGolang}
                       size="xl"
-                      alt="logo de react"
-                    />
-                  </li>
-                  <li className="px-1">
-                    <TailwindCSSLogo
-                      width="24px"
-                      height="24px"
-                      alt="logo de tailwindcss"
-                      className="inline-block fill-black dark:fill-white"
+                      alt="logo for golang"
                     />
                   </li>
                 </ul>
               </div>
               <p className="text-base text-wrap font-primaryMedium text-gray-950 dark:text-slate-200">
-                {`Pagina para un centro de salud "no existe", que tuvo como finalidad mejorar
-                mis habilidades en React y Tailwind CSS`}
+                A Golang bot that uses Gemini AI to instantly summarize group chat messages via the Telegram Bot API.
               </p>
             </div>
             <div className="flex gap-2">
               {renderButtons(
-                "Ver código",
-                "https://github.com/brayanty/DrMorse ",
+                "View code",
+                "https://github.com/brayanty/Telegram-Summarizer-GroupChatbot/",
                 faGithub
-              )}
-              {renderButtons(
-                "Ver página",
-                "https://dr-morse.vercel.app/",
-                faMagnifyingGlass
               )}
             </div>
           </header>

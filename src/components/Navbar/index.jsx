@@ -82,7 +82,7 @@ function Navbar({ isSelectModeDark, themeSelect }) {
                 } transition-all dark:border-gray-300 hover:border-b-4 font-bold max-md:text-gray-50 dark:text-gray-50`}
                 href="#Proyects"
               >
-                <FontAwesomeIcon icon={faBook} size="sm" /> Proyectos
+                <FontAwesomeIcon icon={faBook} size="sm" /> Proyects
               </a>
             </li>
             <li>
@@ -94,7 +94,7 @@ function Navbar({ isSelectModeDark, themeSelect }) {
                 } transition-all dark:border-gray-300 hover:border-b-4 font-bold max-md:text-gray-50 dark:text-gray-50`}
                 href="#contacts"
               >
-                <FontAwesomeIcon icon={faUsers} size="sm" /> Contactos
+                <FontAwesomeIcon icon={faUsers} size="sm" /> Contacts
               </a>
             </li>
             <li className="self-start">
@@ -141,7 +141,7 @@ function Navbar({ isSelectModeDark, themeSelect }) {
                 : "invert-0"
             }`}
             src={menu}
-            alt="Logo de menu"
+            alt="Logo of menu"
           />
         </div>
       </div>

@@ -21,24 +21,23 @@ function Presentation() {
               <span className="relative inline-flex overflow-hidden rounded-full p-[1px]">
                 <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#51E4B8_0%,#21554E_50%,#51E4B8_100%)]" />
                 <div className="inline-flex items-center justify-center w-full px-3 py-1 text-sm text-white rounded-full cursor-pointer bg-gray-700 backdrop-blur-3xl whitespace-nowrap">
-                  Disponible para trabajar
+
+                  Available for work
                 </div>
               </span>
             </div>
           </a>
         </div>
         <h1 className="text-4xl font-bold tracking-tight text-gray-800 sm:text-5xl dark:text-white">
-          Hola, soy Brayan Palacios
+          Hi, i'm Brayan Palacios
         </h1>
         <p className="mt-6 text-xl text-gray-800 shadow-slate-500 text-shadow-sm dark:text-gray-300">
-          Más de 4 años aprendiendo de forma autodidacta sobre desarrollo de
-          software.{" "}
+          More 5 years learning self-taught about software development.{" "}
           <strong className="text-yellow-600 dark:text-yellow-400">
-            Trabajo principalmente con tecnologías como React, Node.js y
-            JavaScript moderno, creando aplicaciones escalables y mantenibles.
+            I mainly work with technologies like React, Node.js and Golang.
           </strong>{" "}
-          Me enfoco en mejorar constantemente mis buenas prácticas, la calidad
-          del código y la resolución eficiente de problemas.
+          I focus on constantly improving my good practices, code quality and
+          efficient problem solving.
         </p>
 
         <nav className="flex flex-wrap gap-4 mt-8">
@@ -69,7 +68,7 @@ function Presentation() {
               <path d="M15 18h6" />
               <path d="M18 15l3 3l-3 3" />
             </svg>
-            Contáctame
+            Contact me
           </a>{" "}
           <a
             href="https://www.linkedin.com/in/el-brayan-p-4b9210261/"

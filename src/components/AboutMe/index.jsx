@@ -6,20 +6,16 @@ import "./index.css";
 function AboutMe() {
   return (
     <section className="about mx-auto container flex flex-col-reverse items-center md:flex-row gap-3 mt-6 mb-6 max-md:p-4 py-10 w-full lg:max-w-4xl md:max-w-2xl">
-      <header className="flex flex-col md:items-start gap-1">
+      <header className="flex flex-col md:items-start gap-2">
         <h2 className="text-4xl font-primarybold tracking-tight text-gray-800 dark:text-white">
-          <FontAwesomeIcon icon={faUser} size="xs" /> Sobre mi
+          <FontAwesomeIcon icon={faUser} size="xs" /> About Me
         </h2>
         <div className="text-xl text-gray-950 dark:text-gray-200">
           <p>
-            Desde pequeño me a gustado la tecnología, sobre todo el funcionamiento de la misma.
+            
+            Passionate about technology and understanding how it works. Currently developing my skills in web development, I bring a strong commitment, a proactive attitude, and a readiness to learn, take on new challenges, and add value from day one.
           </p>
           <br />
-          <p>
-            Actualmente no tengo experiencia en la industria del Desarrollo Web pero estoy
-            profundamente conprometido al dar el 101% en cada cosa que haga, y
-            asi conseguir un perfil mas profesional.
-          </p>
         </div>
       </header>
       <img

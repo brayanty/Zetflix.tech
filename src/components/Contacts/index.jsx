@@ -11,10 +11,9 @@ function Contacts() {
     <section className='mt-10 mb-10 pt-5 pb-5 container m-0-auto flex justify-center items-center gap-4 flex-wrap'>
       <div className='flex gap-3 flex-col flex-wrap font-poppins text-white items-center mx-3'>
         <header className='flex gap-2 flex-col text-center text-black dark:text-white'>
-          <h5 className='font-primarybold text-4xl'>Redes Sociales</h5>
+          <h5 className='font-primarybold text-4xl'>Social Media</h5>
           <p className='font-primaryMedium text-wrap'>
-            Si deseas adquirir mis servicios, comunicate por los siguiente
-            medios
+            If you wish to hire my services, please contact me via the following channels:
           </p>
         </header>
         <ul className='flex gap-6 flex-wra text-black dark:text-slate-300'>
@@ -23,7 +22,7 @@ function Contacts() {
               href='https://x.com/ElBrayanP21'
               target='_blank'
               rel='noopener noreferrer'
-              aria-label='Ir a X'
+              aria-label='Go to X'
             >
               <FontAwesomeIcon
                 icon={faXTwitter}
@@ -37,7 +36,7 @@ function Contacts() {
               href='https://www.linkedin.com/in/el-brayan-p-4b9210261/'
               target='_blank'
               rel='noopener noreferrer'
-              aria-label='Ir a Linkedin'
+              aria-label='Go to Linkedin'
             >
               <FontAwesomeIcon
                 icon={faLinkedin}
@@ -51,7 +50,7 @@ function Contacts() {
               href='https://www.instagram.com/elbrayanp2003/'
               target='_blank'
               rel='noopener noreferrer'
-              aria-label='Ir a Instagram'
+              aria-label='Go to Instagram'
 
             >
               <FontAwesomeIcon
